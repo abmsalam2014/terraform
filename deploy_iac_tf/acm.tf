@@ -18,7 +18,6 @@ resource "aws_acm_certificate_validation" "cert" {
 }
 
 ####ACM CONFIG END
-
 resource "aws_lb_listener" "jenkins-listener" {
   provider          = aws.region-master
   load_balancer_arn = aws_lb.application-lb.arn
